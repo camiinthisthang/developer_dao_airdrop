@@ -34,7 +34,7 @@ export default function Home({searchParams}:PageProps) {
     if (connected) {
       return <LinkButton
         label="Check Eligibility"
-        href={"/check?" + forwardSearchParams(searchParams)}
+        href={"/claim?" + forwardSearchParams(searchParams)}
       />;
     }
     return <ConnectWallet connected={connected} />;

@@ -27,6 +27,7 @@ export default function ConnectWallet({ connected }: { connected: string }) {
     disconnect();
     router.replace(pathname);
   }
+  //Error: `useConfig` must be used within `WagmiConfig`
 
   useEffect(() => {
     if (isConnected && address && connected !== address && !searchParams.get("connected")) {
